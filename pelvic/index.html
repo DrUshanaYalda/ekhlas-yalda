@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>💧 شدّ هادئ — أتو إخلاص</title>
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#121a24;
+      --text:#f2f5f7;
+      --muted:#b9c2cc;
+      --accent:#7dd3fc;
+      --line:rgba(255,255,255,0.10);
+      --ok:rgba(34,197,94,0.18);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, "Noto Kufi Arabic", "Noto Naskh Arabic", sans-serif;
+    }
+    .wrap{
+      height:100svh;
+      overflow-y:auto;
+      scroll-snap-type: y mandatory;
+      scroll-behavior:smooth;
+    }
+    .section{
+      min-height:100svh;
+      scroll-snap-align:start;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px 18px;
+    }
+    .card{
+      width:min(760px, 100%);
+      background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    .title{
+      font-size:30px;
+      line-height:1.2;
+      margin:0 0 6px;
+      letter-spacing:0.2px;
+    }
+    .subtitle{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size:18px;
+      line-height:1.6;
+    }
+    .namechip{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border-radius:999px;
+      background:rgba(125,211,252,0.10);
+      border:1px solid rgba(125,211,252,0.22);
+      color:var(--text);
+      margin:10px 0 0;
+      font-size:18px;
+    }
+    .h{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      font-size:24px;
+      margin:0 0 10px;
+    }
+    .h .badge{
+      font-size:18px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(125,211,252,0.12);
+      border:1px solid rgba(125,211,252,0.25);
+      color:var(--accent);
+      white-space:nowrap;
+    }
+    .p{
+      font-size:20px;
+      line-height:1.75;
+      margin:0 0 10px;
+    }
+    .list{
+      margin:10px 0 0;
+      padding:0;
+      list-style:none;
+    }
+    .list li{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      padding:10px 0;
+      border-top:1px solid var(--line);
+      font-size:20px;
+      line-height:1.7;
+    }
+    .list li:first-child{border-top:none}
+    .mark{
+      width:28px;
+      flex:0 0 28px;
+      text-align:center;
+      font-weight:700;
+    }
+    .muted{color:var(--muted)}
+    .okbox{
+      margin-top:12px;
+      padding:12px 12px;
+      border-radius:16px;
+      background:var(--ok);
+      border:1px solid rgba(34,197,94,0.30);
+      color:var(--text);
+      font-size:18px;
+      line-height:1.7;
+    }
+    .arrow{
+      margin-top:12px;
+      color:var(--muted);
+      font-size:18px;
+      text-align:center;
+    }
+    .tiny{
+      font-size:16px;
+      color:var(--muted);
+      margin-top:14px;
+      line-height:1.6;
+    }
+    .wrap::-webkit-scrollbar{width:0;height:0}
+    .wrap{scrollbar-width:none}
+    .hint{
+      position:fixed;
+      left:16px;
+      bottom:16px;
+      right:16px;
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      pointer-events:none;
+      opacity:0.85;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .hint span{
+      background:rgba(0,0,0,0.35);
+      border:1px solid var(--line);
+      padding:8px 10px;
+      border-radius:999px;
+      backdrop-filter: blur(6px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap" id="wrap">
+
+    <!-- Cover -->
+    <section class="section">
+      <div class="card">
+        <h1 class="title">💧 شدّ هادئ</h1>
+        <p class="subtitle">
+          حركة بسيطة للجسم.<br>
+          كل صفحة فكرة وحدها — اسحبي لتحت.
+        </p>
+
+        <div class="namechip">👤 هذا مخصّص لـ: <b>أتو إخلاص</b></div>
+
+        <ul class="list" style="margin-top:14px;">
+          <li><div class="mark">✔</div><div>المهم: <b>شدّ خفيف</b> بعدها <b>ارتخاء كامل</b></div></li>
+          <li><div class="mark">⏱</div><div>مرة وحدة تكفي… وإذا زدتي خير وبركة</div></li>
+          <li><div class="mark">🤍</div><div>إذا نسيتي… <b>كمّلي باجر</b></div></li>
+        </ul>
+
+        <div class="arrow">⬇ اسحبي لتحت</div>
+      </div>
+    </section>
+
+    <!-- How -->
+    <section class="section">
+      <div class="card">
+        <div class="h"><span class="badge">كيف؟</span><span>طريقة الشدّ الهادئ</span></div>
+
+        <p class="p">تخيّلي تريدين <b>تمنعين خروج الغازات</b>… شدّ خفيف للداخل وفوك.</p>
+
+        <ul class="list">
+          <li><div class="mark">✔</div><div><b>شدّ خفيف</b> (لا تشدّين بقوة)</div></li>
+          <li><div class="mark">⏱</div><div><b>٥ ثواني</b> بس</div></li>
+          <li><div class="mark">🌿</div><div><b>ارتخاء كامل</b> بعدها (هذا أهم شي)</div></li>
+        </ul>
+
+        <div class="okbox">إذا تحسين بطنك/فخذك يشتغلون… خفّفي الشدّ وخليها “داخلية”.</div>
+
+        <div class="arrow">⬇ التالي</div>
+      </div>
+    </section>
+
+    <!-- Anchor 1: Afternoon tea with dad -->
+    <section class="section">
+      <div class="card">
+        <div class="h"><span class="badge">☕ شاي العصر</span><span>ويّا بابا يلده</span></div>
+
+        <p class="p">هذا وقت راحة… خليه يصير “لحظة بسيطة”.</p>
+
+        <ul class="list">
+          <li><div class="mark">✔</div><div><b>أول رشفة شاي</b> → شدّ هادئ</div></li>
+          <li><div class="mark">🌿</div><div>بعدها → <b>ارتخاء أطول</b></div></li>
+        </ul>
+
+        <p class="p muted">إذا إجاك شعور راحة/ابتسامة… تقدرين تسوين <b>مرّة ثانية</b> (اختياري).</p>
+
+        <div class="okbox">مو لازم كل يوم. إذا نسيتي… كمّلي عادي.</div>
+
+        <div class="arrow">⬇ التالي</div>
+      </div>
+    </section>
+
+    <!-- Anchor 2: Phone in bed -->
+    <section class="section">
+      <div class="card">
+        <div class="h"><span class="badge">📱 بالفراش</span><span>أول ما تفتحين التلفون</span></div>
+
+        <p class="p">قبل لا تبدين فيدوات…</p>
+
+        <ul class="list">
+          <li><div class="mark">✔</div><div><b>أول ما تفتحين التلفون</b> → شدّ خفيف وحدة</div></li>
+          <li><div class="mark">🌿</div><div>وبعدين → <b>ارتخاء كامل</b></div></li>
+        </ul>
+
+        <p class="p muted">الفكرة: تساعد الجسم “يهدا” شوي… وبعدين كمّلي عادي.</p>
+
+        <div class="okbox">إذا ما لحكتي/نسيتي… كمّلي نومك عادي.</div>
+
+        <div class="arrow">⬇ التالي</div>
+      </div>
+    </section>
+
+    <!-- Optional: brushing teeth -->
+    <section class="section">
+      <div class="card">
+        <div class="h"><span class="badge">🪥 اختياري</span><span>أثناء تفريش الأسنان</span></div>
+
+        <p class="p">بس إذا تتذكّرين…</p>
+
+        <ul class="list">
+          <li><div class="mark">✔</div><div>قبل ما تكمّلين التفريش → <b>شدّ هادئ مرّة وحدة</b></div></li>
+          <li><div class="mark">🌿</div><div>وبعدها → <b>ارتخاء كامل</b></div></li>
+        </ul>
+
+        <div class="okbox">إذا ما تتذكّرين… ولا يهمج. خليها اختيارية.</div>
+
+        <div class="arrow">⬇ الأخير</div>
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="section">
+      <div class="card">
+        <div class="h"><span class="badge">الخلاصة</span><span>قليل… بس يمشي</span></div>
+
+        <ul class="list">
+          <li><div class="mark">☕</div><div>شاي العصر ويّا الوالد = <b>شدّ + ارتخاء</b></div></li>
+          <li><div class="mark">📱</div><div>أول ما تفتحين التلفون بالسرير = <b>شدّ + ارتخاء</b></div></li>
+          <li><div class="mark">🪥</div><div>تفريش الأسنان = <b>اختياري</b> إذا تتذكّرين</div></li>
+        </ul>
+
+        <p class="p" style="margin-top:12px;"><b>شدّ خفيف… ارتخاء كامل… وخلصنا.</b></p>
+        <p class="p muted">البداية تكفي. سوي اللي يجي بسهولة.</p>
+
+        <div class="tiny" style="margin-top:16px;">
+          توقيع: <b>د. أوشانا يلده</b>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="hint" aria-hidden="true">
+    <span>⬇ اسحبي لتحت</span>
+    <span>📱 مناسب للسكرينشوت</span>
+  </div>
+</body>
+</html>
